@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <title>PROYECTO FINAL JS</title>
+  <meta name="author" content="jose alial">
+  <meta name="description" content="En esta pagina encontraras las mejores OFERTAS para tus vacaciones EPICAS">
+
+</head>
+
+<body>
+  <section> <button id="mostrarForm">Login</button>
+
+    <label id="labelIzquierdo"></label>
+
+    <form id="loginForm">
+      <h1>Iniciar sesión</h1>
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" required placeholder="usuario1"><br>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" required placeholder="pass1"><br>
+      <button type="submit" id="loginButton">Iniciar sesión</button>
+    </form>
+  </section>
+
+  <header>
+    <section>
+      <div>
+        <img id="logo" src="image/logo.png" alt="logo">
+        <h1 id="encabezado">¡Descubre tu aventura épica!</h1>
+      </div>
+      <div>
+        <button id="btnVerCarrito">Ver Carrito</button>
+        <label id="carritoLabel"></label>
+        <p id="totalLabel"></p>
+        <button id="finalizarCompra" class="btnCarrito">Finalizar compra</button>
+        <button id="cancelarCompra" class="btnCarrito">Cancelar Compra</button>
+      </div>
+    </section>
+
+    <nav class="navegador">
+      <ul>
+        <li>
+          <button class="btnFiltrarCategoria" data-categoria="todos">Todos</button>
+        </li>
+        <li>
+          <button class="btnFiltrarCategoria" data-categoria="EUROPA">Europa</button>
+        </li>
+        <li>
+          <button class="btnFiltrarCategoria" data-categoria="ASIA">Asia</button>
+        </li>
+        <li>
+          <button class="btnFiltrarCategoria" data-categoria="AMERICA">América</button>
+        </li>
+        <li>
+          <input id="buscador" placeholder="Continente o Ciudad">
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+
+    <div id="destinos"></div>
+
+    <section class="wsp">
+      <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO">
+        <img src="image/wsp.png" alt="wsp logo">
+      </a>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <section class="redes">
+          <a href="https://www.instagram.com/">
+            <img src="image/instalogo.png" alt="insta logo">
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src="image/facebooklogo.png" alt="fbook logo">
+          </a>
+          <a href="https://twitter.com/">
+            <img src="image/twiterlogo.png" alt="twiter logo">
+          </a>
+          <a href="https://www.tiktok.com/">
+            <img src="image/tiktiklogo.png" alt="tiktok logo">
+          </a>
+        </section>
+      </div>
+
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

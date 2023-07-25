@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+#encabezado {
+  color: rgb(175, 105, 72);
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #bd79b4;
+  border-radius: 10px;
+  margin: 1px;
+}
+
+#destinos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 5fr);
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 100%;
+  gap: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navegador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(38, 38, 40), rgb(21, 22, 26));
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(to right,
+      rgb(255, 255, 255),
+      #ac2295,
+      rgb(255, 255, 255));
+      background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+button {
+  justify-content: center;
+  background-color: #5f81c957;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+  background-color: #bd79b4;
+  color: black;
+  transition: 0.5s;
+}
+
+.btnCarrito {
+  display: none;
+  padding: 5px;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#labelIzquierdo {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+
+#loginForm {
+  display: none;
+}
+
+#logo {
+  border-radius: 100px;
+  width: 150px;
+  height: 100%;
+}
+
+#btnVerCarrito {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background: linear-gradient(to right, #d14141a4, #6e3dc986);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btnVerCarrito:hover {
+  background-color: #ffffff;
+  color: #d14141;
+  transition: 0.5s;
+}
+
+header {
+  background: linear-gradient(to right, rgb(38, 38, 40), rgb(21, 22, 26));
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.wsp {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+.wsp img {
+  width: 80px;
+  height: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; 
+}
+
+.redes {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.redes a {
+  display: inline-block;
+  margin: 0 10px; 
+}
+
+.redes img {
+  border-radius: 15px;
+  width: 80px;
+  height: 100%;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 580px) {
+  nav ul {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+
+  #destinos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wsp img {
+    width: 65px;
+    height: 100%;
+  }
+  
+  .redes img {
+    border-radius: 15px;
+    width: 50px;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  #destinos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #destinos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  #destinos {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
